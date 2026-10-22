@@ -1,0 +1,69 @@
+/* Custom Global Style */
+body {
+    font-family: 'Kanit', 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    scroll-behavior: smooth;
+}
+
+/* Hero Header Section */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: #ffffff;
+    padding: 80px 0 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/* รูปโปรไฟล์ที่ดึงจาก profile.jpg */
+.profile-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover; /* ป้องกันรูปเบี้ยว */
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Custom Card Effect */
+.custom-card {
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Badge Skills Customization */
+.badge-skill {
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    border: 1px solid #b6d4fe;
+    display: inline-block;
+}
+
+/* Project Cards Icon Box */
+.project-icon-wrapper {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Border for Contact Section on Desktop */
+@media (min-width: 768px) {
+    .border-end-md {
+        border-right: 1px solid #dee2e6 !important;
+    }
+}
